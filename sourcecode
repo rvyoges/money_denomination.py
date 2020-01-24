@@ -1,0 +1,11 @@
+sum=input()
+list=[]
+value=[]
+length=len(sum)
+for i in range(length-1,-1,-1):
+  list.append(10**i)
+for i in range(0,length):
+  x=int(sum[i])*list[i]
+  value.append(x)
+  print(str(sum[i])+"x"+str(list[i])+"="+str(value[i]))
+print(sum)
